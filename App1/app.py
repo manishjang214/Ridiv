@@ -28,7 +28,8 @@ def get_text_chunks(text):
     )
     chunks = text_splitter.split_text(text)
     return chunks
-
+def get_unique_value(text):
+    return text
 
 def get_vectorstore(text_chunks):
     embeddings = OpenAIEmbeddings()
