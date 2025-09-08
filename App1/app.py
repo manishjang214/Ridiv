@@ -31,6 +31,10 @@ def get_text_chunks(text):
 def get_unique_value(text):
     return text
 
+def get_user_data(text):
+    return text
+
+
 def get_vectorstore(text_chunks):
     embeddings = OpenAIEmbeddings()
     # embeddings = HuggingFaceInstructEmbeddings(model_name="hkunlp/instructor-xl")
